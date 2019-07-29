@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import State from '../state/index';
 import * as api from '../api/index';
 import Header from './Header';
 import List from './List';
