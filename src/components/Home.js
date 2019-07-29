@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import State from '../state/index';
 import * as api from '../api/index';
 import Header from './Header';
-import RepoList from './RepoList';
+import List from './List';
 import '../assets/App.css';
 
 class Home extends Component {
@@ -36,7 +36,7 @@ class Home extends Component {
     return (
       <div className="App">
         <Header />
-        <RepoList repos={!error ? repos : error} />
+        <List repos={!error ? repos : error} />
       </div>
     );
   }
