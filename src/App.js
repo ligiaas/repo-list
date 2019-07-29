@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/Home';
+import RepoItem from './components/RepoItem';
+import Commits from './components/Commits';
+import './assets/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/repo" component={ RepoItem } />
+        <Route exact path="/:handle/commits" component={ Commits } />
+      </div>
+    </Router>
   );
 }
 
