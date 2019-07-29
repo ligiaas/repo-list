@@ -1,14 +1,14 @@
 import React from 'react';
-import Item from './Item';
+import Repo from './Repo';
 
-const List = ({repos}) => (
+const Repos = ({repos}) => (
   <div className="repoListContainer">
     {
       repos.map(repo => (
-        <Item repo={repo} key={repo.id}/>
+        <Repo repo={repo} key={repo.id}/>
       ))
     }
   </div>
 );
 
-export default List;
+export default Repos;

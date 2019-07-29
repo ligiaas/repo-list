@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = ({repo}) => (
+const Repo = ({repo}) => (
   <a
     className="repoItemContainer"
     href={`/${repo.name}/commits`}
@@ -12,4 +12,4 @@ const Item = ({repo}) => (
   </a>
 )
 
-export default Item;
+export default Repo;

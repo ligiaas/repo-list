@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as api from '../api/index';
-import List from './List';
+import Commit from './Commit';
 
 class Commits extends Component {
   constructor(props) {
@@ -36,9 +36,15 @@ class Commits extends Component {
       return <div>{error.message}</div>
     } else {
       return (
-        <div className="">
-         <List repos={!error ? commits : error} />
-        </div>
+        <table className="repoListContainer">
+          <tbody>
+            {
+              commits.map((commit, index) => (
+                <Commit commit={commit} key={index}/>
+              ))
+            }
+          </tbody>
+        </table>
       );
     }
   }

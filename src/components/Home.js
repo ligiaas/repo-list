@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as api from '../api/index';
 import Header from './Header';
-import List from './List';
+import Repos from './Repos';
 import '../assets/App.css';
 
 class Home extends Component {
@@ -35,7 +35,7 @@ class Home extends Component {
     return (
       <div className="App">
         <Header />
-        <List repos={!error ? repos : error} />
+        <Repos repos={!error ? repos : error} />
       </div>
     );
   }
