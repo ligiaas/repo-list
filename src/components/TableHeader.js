@@ -3,10 +3,10 @@ import Octicon, {GitBranch, Star, IssueOpened, Repo} from '@primer/octicons-reac
 
 const TableHeader = () => (
   <div className="row" >
-    <div className="col_princ celula"><Octicon icon={Repo} size='medium'/></div>
-    <div className="col_item celula"><Octicon icon={Star} size='medium'/></div>
-    <div className="col_item celula"><Octicon icon={GitBranch} size='medium'/></div>
-    <div className="col_item celula"><Octicon icon={IssueOpened} size='medium'/></div>
+    <div className="col_item--2cols celula"><Octicon icon={Repo} size='medium'/></div>
+    <div className="col_item--3cols col_center celula"><Octicon icon={Star} size='medium'/></div>
+    <div className="col_item--3cols col_center celula"><Octicon icon={GitBranch} size='medium'/></div>
+    <div className="col_item--3cols col_center celula"><Octicon icon={IssueOpened} size='medium'/></div>
   </div>
 )
 

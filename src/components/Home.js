@@ -33,7 +33,7 @@ class Home extends Component {
   render() {
     const { repos, error } = this.state;
     return (
-      <div className="App">
+      <div>
         <Header/>
         <Repos repos={!error ? repos : error} />
       </div>

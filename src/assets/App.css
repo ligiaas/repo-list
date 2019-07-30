@@ -8,6 +8,10 @@ a {
   color: black;
 }
 
+a#header {
+  text-decoration: none;
+}
+
 header {
   text-align: left;
 }
@@ -71,11 +75,15 @@ header {
   padding:  0.8em 1.2em;
 }
 
-.col_princ {
-  width: 30%;
-}
-
-.col_item {
-  width: 23%;
+.col_center {
   text-align: center;
 }
+
+/* Table column sizing
+================================== */
+.col_item--2cols { width: 50%; }
+.col_item--3cols { width: 33.33%; }
+.col_item--4cols { width: 25%; }
+.col_item--5cols { width: 20%; }
+.col_item--6cols { width: 16.6%; }
+
