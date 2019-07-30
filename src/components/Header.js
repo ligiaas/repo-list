@@ -1,9 +1,13 @@
 import React from 'react';
 import '../assets/App.css';
+import Octicon, {MarkGithub} from '@primer/octicons-react'
 
 const Header = () => (
   <header>
-    <h1 className="title">Repositories List</h1>
+    <a href="/" id="header">
+      <span><Octicon icon={MarkGithub} size='large'/></span>
+      <h1 className="title">Ligiaas Repositories List</h1>
+    </a>
   </header>
 )
 
