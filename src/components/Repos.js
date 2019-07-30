@@ -1,13 +1,15 @@
 import React from 'react';
+import TableHeader from './TableHeader';
 import Repo from './Repo';
 
 const Repos = ({repos}) => (
   <div className="repoListContainer">
-    {
-      repos.map(repo => (
-        <Repo repo={repo} key={repo.id}/>
-      ))
-    }
+      <TableHeader />
+      {
+        repos.map(repo => (
+          <Repo repo={repo} key={repo.id}/>
+        ))
+      }
   </div>
 );
 
