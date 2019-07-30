@@ -26,14 +26,3 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Library
-
-### Axios
-Promise based HTTP client for the browser and node.js.
-
-### React Router
-For route management.
-
-### Octicons for React
-Octicons are a set of SVG icons built by GitHub for GitHub.
