@@ -34,7 +34,7 @@ class Home extends Component {
     const { repos, error } = this.state;
     return (
       <div className="App">
-        <Header />
+        <Header/>
         <Repos repos={!error ? repos : error} />
       </div>
     );
