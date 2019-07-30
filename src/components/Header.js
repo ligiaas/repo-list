@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/App.css';
-import Octicon, {MarkGithub} from '@primer/octicons-react'
+import Octicon, {MarkGithub} from '@primer/octicons-react';
 
 const Header = () => (
   <header>

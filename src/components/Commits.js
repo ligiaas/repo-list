@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import * as api from '../api/index';
 import Header from './Header';
 import Commit from './Commit';
-import TableHeader from './TableHeader';
 
 class Commits extends Component {
   constructor(props) {
@@ -45,7 +44,10 @@ class Commits extends Component {
         <div>
           <Header/>
           <div className="repoListContainer">
-            <TableHeader/>
+          <div className="row" >
+            <div className="col_item--2cols celula"><h2>Mensagem</h2></div>
+            <div className="col_item--6cols celula"><h2>Sha</h2></div>
+          </div>
             {
               commits.map((commit, index) => (
                 <Commit commit={commit} key={index}/>
